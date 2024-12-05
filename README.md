@@ -24,17 +24,17 @@ The data for this project is sourced from the Kaggle dataset:
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix 
 (
-   show_id	        VARCHAR(6),
+   show_id	    VARCHAR(6),
    type             VARCHAR(15),
-   title	          VARCHAR(150),
-   director	        VARCHAR(220),
-   casts	          VARCHAR(1000),
-   country	        VARCHAR(150),   
-   date_added	      VARCHAR(50),
+   title	    VARCHAR(150),
+   director	    VARCHAR(220),
+   casts	    VARCHAR(1000),
+   country	    VARCHAR(150),   
+   date_added	    VARCHAR(50),
    release_year	    INT,
-   rating	          VARCHAR(10),
+   rating	    VARCHAR(10),
    duration         VARCHAR(20),
-   listed_in	      VARCHAR(100),
+   listed_in	    VARCHAR(100),
    description      VARCHAR(250)
 );
 ```
