@@ -224,19 +224,20 @@ return top 5 year with highest avg content release!
 ```sql
 WITH new_table 
   AS ( SELECT *,
-	          CASE 
-			  WHEN
-			      description ILIKE '%kill%' 
+                CASE 
+                    WHEN
+                        description ILIKE '%kill%' 
 				  OR
-				  description ILIKE '%violence%' THEN 'Bad_Content'
-				  ELSE 'Good_Content'
-			  END as category
-	FROM netflix )
- SELECT
-       category,
-	   COUNT(*) as total_content 
-FROM new_table
-GROUP BY category ;
+                        description ILIKE '%violence%'
+                        THEN 'Bad_Content'
+                        ELSE 'Good_Content'
+                        END as category
+	             FROM netflix )
+        SELECT
+              category,
+              COUNT(*) as total_content 
+       FROM new_table
+       GROUP BY category ;
 ```
 
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
