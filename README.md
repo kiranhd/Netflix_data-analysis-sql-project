@@ -237,6 +237,10 @@ WITH new_table
 
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
+## Dashboard
+
+![Netflix Dashboard](https://github.com/kiranhd/Netflix_data-analysis-sql-project/blob/main/Dashboard.jpeg)
+
 ## Findings and Conclusion
 
 - **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
